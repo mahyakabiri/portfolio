@@ -8,6 +8,7 @@ const Arrow = () => (
 
 export default function Home() {
   const p = profile;
+  const longestRole = [...p.roles].sort((a, b) => b.length - a.length)[0];
   const ringOffset = 176 - (176 * p.lighthouse) / 100;
   return (
     <>
@@ -35,7 +36,11 @@ export default function Home() {
             )}
             <h1 className="rise d1">
               {p.name}
-              <span className="role"><span className="typed" data-typed>{p.roles[0]}</span><span className="caret" aria-hidden="true" /></span>
+              <span className="role">
+                {/* Invisible copy of the longest role reserves the space, so typing never shifts the layout */}
+                <span className="role-sizer" aria-hidden="true">{longestRole}<span className="caret" /></span>
+                <span className="role-live"><span className="typed" data-typed>{p.roles[0]}</span><span className="caret" aria-hidden="true" /></span>
+              </span>
             </h1>
             <p className="lede rise d2" dangerouslySetInnerHTML={{ __html: p.lede }} />
             <div className="cta-row rise d3">
