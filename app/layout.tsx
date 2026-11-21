@@ -4,9 +4,9 @@ import { profile } from "@/data/profile";
 import "./globals.css";
 
 // Fonts are self-hosted from npm packages so builds never depend on a network fetch.
-const display = localFont({ src: "../node_modules/@fontsource-variable/bricolage-grotesque/files/bricolage-grotesque-latin-wght-normal.woff2", weight: "200 800", variable: "--font-display-next", display: "swap" });
-const body = localFont({ src: "../node_modules/@fontsource-variable/inter/files/inter-latin-wght-normal.woff2", weight: "100 900", variable: "--font-body-next", display: "swap" });
-const mono = localFont({ src: "../node_modules/@fontsource-variable/jetbrains-mono/files/jetbrains-mono-latin-wght-normal.woff2", weight: "100 800", variable: "--font-mono-next", display: "swap", preload: false });
+const display = localFont({ src: "../node_modules/@fontsource-variable/sora/files/sora-latin-wght-normal.woff2", weight: "100 800", variable: "--font-display-next", display: "swap" });
+const body = localFont({ src: "../node_modules/@fontsource-variable/geist/files/geist-latin-wght-normal.woff2", weight: "100 900", variable: "--font-body-next", display: "swap" });
+const mono = localFont({ src: "../node_modules/@fontsource-variable/geist-mono/files/geist-mono-latin-wght-normal.woff2", weight: "100 800", variable: "--font-mono-next", display: "swap", preload: false });
 
 export const metadata: Metadata = {
   title: `${profile.name} · ${profile.roles[0]}`,
@@ -17,8 +17,8 @@ export const metadata: Metadata = {
 export const viewport: Viewport = {
   viewportFit: "cover",
   themeColor: [
-    { media: "(prefers-color-scheme: dark)", color: "#0c1015" },
-    { media: "(prefers-color-scheme: light)", color: "#f5f6f8" },
+    { media: "(prefers-color-scheme: dark)", color: "#0a0f24" },
+    { media: "(prefers-color-scheme: light)", color: "#f3f5f9" },
   ],
 };
 
