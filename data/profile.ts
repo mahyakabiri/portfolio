@@ -6,10 +6,10 @@ export const profile = {
   location: "Remote, hybrid or on-site",
   available: true,
   lede:
-    "Front-end engineer with <strong>7 years</strong> building responsive, well-tested web apps with <strong>React, Next.js and TypeScript</strong>. I bring AI-assisted workflows into everyday engineering to speed up testing, code review and documentation.",
+    "Front-end engineer with <strong>7+ years</strong> building responsive, well-tested web apps with <strong>React, Next.js and TypeScript</strong>. I bring AI-assisted workflows into everyday engineering to speed up testing, code review and documentation.",
   resumeUrl: `${process.env.NEXT_PUBLIC_BASE_PATH ?? ""}/Mahya-Kabiri-Resume.pdf`,
   stats: [
-    { value: "7", label: "years building for the web" },
+    { value: "7+", label: "years building for the web" },
     { value: "60M+", label: "users on the product I work on" },
     { value: "−80%", label: "E2E test-writing time" },
     { value: "+40%", label: "test coverage at Snapp" },
